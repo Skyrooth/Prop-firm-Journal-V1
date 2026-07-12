@@ -8,8 +8,8 @@ Dark theme inspired by Notion × TradingView. Data lives in a SQLite file on you
 Butuh [Node.js](https://nodejs.org) (versi 20 ke atas).
 
 ```
-git clone https://github.com/<username>/prop-journal.git
-cd prop-journal
+git clone https://github.com/Rendy723/Prop-firm-Journal-V1.git
+cd Prop-firm-Journal-V1
 npm install
 npm start
 ```
