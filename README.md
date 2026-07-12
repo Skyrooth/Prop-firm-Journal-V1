@@ -3,6 +3,12 @@
 Personal prop-firm trading journal & dashboard — single user, fully local, no login.
 Dark theme inspired by Notion × TradingView. Data lives in a SQLite file on your PC.
 
+![Dashboard](docs/screenshot.png)
+
+| Trading Challenge ($500 → $1M) | Reports |
+|---|---|
+| ![Trading Challenge](docs/screenshot-challenge.png) | ![Reports](docs/screenshot-reports.png) |
+
 ## Cara menjalankan
 
 Butuh [Node.js](https://nodejs.org) (versi 20 ke atas).
