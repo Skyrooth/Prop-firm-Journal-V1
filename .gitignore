@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Personal data — never commit your actual trading journal!
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Backups & exports
+prop-journal-backup-*.json
+prop-journal-*.xlsx
+
+# OS noise
+Thumbs.db
+.DS_Store

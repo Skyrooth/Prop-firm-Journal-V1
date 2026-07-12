@@ -1,0 +1,16 @@
+{
+  "name": "prop-journal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal prop firm trading journal & dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "chart.js": "^4.4.9",
+    "express": "^4.21.2",
+    "xlsx": "^0.18.5"
+  }
+}
