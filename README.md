@@ -14,7 +14,7 @@ Dark theme inspired by Notion × TradingView. Data lives in a SQLite file on you
 Butuh [Node.js](https://nodejs.org) (versi 20 ke atas).
 
 ```
-git clone https://github.com/Rendy723/Prop-firm-Journal-V1.git
+git clone https://github.com/Skyrooth/Prop-firm-Journal-V1.git
 cd Prop-firm-Journal-V1
 npm install
 npm start
