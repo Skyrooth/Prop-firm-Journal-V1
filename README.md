@@ -46,6 +46,7 @@ Mau buka dari HP? Pastikan HP satu Wi-Fi dengan PC, lalu buka alamat yang terter
 - **Total Profit** = jumlah P/L semua trade di journal.
 - **Total Payout** = jumlah **net payout** berstatus *Confirmed* (kalau net kosong, dipakai amount).
 - **Net Profit** = Total Payout − Total Expense (uang beneran di kantong).
+- **ROI** = (Total Payout − Total Expense) ÷ Total Expense × 100% — persentase balik modal dari duit yang dikeluarkan buat challenge/fee.
 - **Passed Challenges** = akun berstatus *Passed* atau *Funded*.
 - **Challenge capital** = start capital ($500, bisa diubah di Settings) + payout confirmed − expenses. Milestone tercapai otomatis lengkap dengan tanggalnya.
 

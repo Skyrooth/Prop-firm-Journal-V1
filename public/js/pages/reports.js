@@ -51,6 +51,12 @@ export default async function render(root) {
       U.statCard('Expenses', U.fmtMoney(totExpense), `${expenses.length} entries`, totExpense > 0 ? 'neg' : ''),
       U.statCard('Net Profit', U.fmtMoney(totPayout - totExpense, { sign: true }), 'payouts − expenses',
         totPayout - totExpense > 0 ? 'pos' : totPayout - totExpense < 0 ? 'neg' : ''),
+      (() => {
+        const roi = totExpense > 0 ? ((totPayout - totExpense) / totExpense) * 100 : null;
+        return U.statCard('ROI', roi == null ? '—' : (roi > 0 ? '+' : '') + roi.toFixed(1) + '%',
+          roi == null ? 'no expenses this period' : 'payout return on expenses',
+          roi > 0 ? 'pos' : roi < 0 ? 'neg' : '');
+      })(),
     );
 
     const c1 = CH.chartCard('Monthly Trading Profit', 'Sum of journal P/L per month', 240);

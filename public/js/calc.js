@@ -86,6 +86,8 @@ export function dashboardStats({ accounts, trades, payouts, expenses }) {
     totalPayout,
     totalExpense,
     netProfit: totalPayout - totalExpense,
+    // Return on the money spent chasing funding; null until there is an expense to measure against.
+    roi: totalExpense > 0 ? ((totalPayout - totalExpense) / totalExpense) * 100 : null,
     confirmedCount: confirmed.length,
     activeAccounts: active.length,
     passed: accounts.filter(a => a.status === 'Passed' || a.status === 'Funded').length,

@@ -22,6 +22,8 @@ export default async function render(root) {
     U.statCard('Net Profit', U.fmtMoney(s.netProfit, { sign: true }), 'payouts − expenses', tone(s.netProfit)),
     U.statCard('Total Payout', U.fmtMoney(s.totalPayout), `${s.confirmedCount} confirmed`, s.totalPayout > 0 ? 'pos' : ''),
     U.statCard('Total Expense', U.fmtMoney(s.totalExpense), `${data.expenses.length} entries`, s.totalExpense > 0 ? 'neg' : ''),
+    U.statCard('ROI', s.roi == null ? '—' : (s.roi > 0 ? '+' : '') + s.roi.toFixed(1) + '%',
+      s.roi == null ? 'log an expense first' : 'payout return on expenses', tone(s.roi ?? 0)),
     U.statCard('Win Rate', s.winRate.toFixed(1) + '%', `${s.wins}W · ${s.losses}L of ${s.tradeCount} trades`),
   );
 
